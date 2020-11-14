@@ -1,3 +1,5 @@
+# もっといいプログラムを考えたかった
+# が、出てこないし飽きちゃった
 N = input()
 numList = list(N)
 one = 0
@@ -17,6 +19,7 @@ else:
     tmpsm=sm
     i_one=0
     i_two=0
+    # ここら辺の for 文をうまくしたいけどできんやった
     for i in range(one+two):
         print(i_one+i_two)
         tmpsm = tmpsm - i_one * 1
