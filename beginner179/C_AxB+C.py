@@ -1,3 +1,4 @@
+# 時間がオーバーするのでダメ
 def sumOfYakusu(N):
     import math
     count = 0
