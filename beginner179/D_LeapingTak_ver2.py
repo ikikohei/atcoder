@@ -9,6 +9,7 @@ def leapingTak(N, sections):
     for j in range(2,N+1):
         dp[j] = dp[j-1]
         for section in sections:
+            # 累積和で dp を埋めていく
             s = section[0]
             e = section[1]
             if s > j:
@@ -17,8 +18,10 @@ def leapingTak(N, sections):
                 dp[j] += dp[j-s] - dp[0]
                 continue
             dp[j] += dp[j-s] - dp[j-e-1]
+        # ここで余りにしないとメモリがいっぱいいっぱいに
         dp[j] = dp[j] % const
-    # print(dp)
+    # printo(dp)
+    # dp[N] と dp[N-1] の大小関係によって返す値を変える
     return dp[N] - dp[N-1] if (dp[N]-dp[N-1]) >= 0 else const + dp[N] - dp[N-1]
     # return dp[N]-dp[N-1]
 

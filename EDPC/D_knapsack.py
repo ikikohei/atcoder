@@ -17,7 +17,7 @@ def main():
         items.append(list(map(int, input().split())))
     print(items)
     dp = knapsack(N,W,items)
-    print(dp)
+    # print(dp)
     print(dp[N][W])
 
 if __name__=='__main__':
