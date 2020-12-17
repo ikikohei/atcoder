@@ -3,7 +3,7 @@ def main():
     if m == 0: return print(1)
     blue_list = list(map(int,input().split()))
     blue_list.sort()
-    print(blue_list)
+    # print(blue_list)
     white_size_list = []
     if blue_list[0]-1 != 0:
         white_size_list.append(blue_list[0]-1)
