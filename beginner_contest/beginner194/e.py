@@ -1,3 +1,4 @@
+# time over
 def mex(tmpset):
     loop = 1
     while True:
